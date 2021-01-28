@@ -483,6 +483,7 @@ dependencies = [
  "actix-files",
  "actix-web",
  "handlebars",
+ "serde_json",
 ]
 
 [[package]]

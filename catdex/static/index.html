@@ -6,20 +6,14 @@
 	<link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
-	<h1>Catdex</h1>
+	<h1>{{project_name}}</h1>
 	<section class="cats">
+		{{#each cats}}
 		<article class="cat">
-			<h3>British shor hair</h3>
-			<img src="static/images/british-short-hair.jpg"/>
+			<h3>{{this.name}}</h3>
+			<img src="{{this.image_path}}"/>
 		</article>
-		<article class="cat">
-			<h3>Persian</h3>
-			<img src="static/images/persian.jpg"/>
-		</article>
-		<article class="cat">
-			<h3>Ragdoll</h3>
-			<img src="static/images/ragdoll.jpg"/>
-		</article>
+		{{/each}}
 	</section>
 </body>
 </html>
