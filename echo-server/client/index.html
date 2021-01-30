@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Echo Client</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container my-5">
+		<div class="card shadow rounded">
+			<div class="card-body">
+		<label for="messages" class="form-label">Messages</label>
+		<textarea class="form-control" readonly id="messages" rows="10"></textarea>
+		<div class="row mt-3">			
+			<div class="col-sm-10">
+		<input type="text" class="form-control mx-1" id="message" placeholder="Type your message"/>
+			</div>
+			<div class="col-sm-2">
+				<button id="send" class="btn btn-info mx-1">Send</button>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>
